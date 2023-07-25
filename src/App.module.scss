@@ -1,0 +1,75 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: #eae8e5;
+  margin: 0;
+
+  .container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    .card {
+      width: 400px;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 124px;
+      border-radius: 12px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    .numberCard {
+      background-color: white;
+    }
+
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+
+  }
+}
+
+button {
+  display: block;
+  background-color: #0267b18f;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1em 2em;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover {
+    border-color: #bbb;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid red;
+  }
+}
